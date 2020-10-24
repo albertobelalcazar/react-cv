@@ -1,0 +1,46 @@
+.jumbotron {
+    position: relative;
+    min-height: 600px;
+    background-image: url('./../../assets/bgmountain.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    width: 100%;
+    z-index: 0;
+
+}
+
+.jumbotron-cover-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 600px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.jumbotron-cover-legend--one {
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    z-index: 999999;
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    text-shadow: 1px 1px #333;
+}
+
+// .jumbotron-cover-legend--two {
+//     color: white;
+//     font-weight: 700;
+//     font-size: 70px;
+//     z-index: 999999;
+//     position: absolute;
+//     display: block;
+//     width: 100%;
+//     text-align: center;
+//     top: 45%;
+//     text-shadow: 1px 1px #333;
+// }
