@@ -1,12 +1,28 @@
+.carousell-container {
+    background: #F8F9FC;
+    margin: 120px 0 0 0;
+}
+
 .custom-carousell {
-    background: $skills-bg;
-    margin: 50px 0 0 0;
-    padding: 25px 0 70px 70px;
-    // height: 400px;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
 
     h1 {
         font-size: 60px;
         color: $blacktitle;
     }
 
+}
+
+.casousell-text {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 9999;
+}
+
+.alice-carousel__stage-item * {
+    text-align: center;
+    color: brown;
 }

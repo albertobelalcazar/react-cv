@@ -2,8 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { PaletteOutlined, SettingsOutlined, AccessAlarm, DevicesOutlined } from '@material-ui/icons';
-import { pink } from '@material-ui/core/colors';
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5, faCss3, faJs, faReact, faWindows, faConnectdevelop } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
@@ -29,42 +30,44 @@ const Skills = () => {
                 <Grid container spacing={0} alignItems="center" justify="center">
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
-                            <DevicesOutlined style={{ color: pink[500], fontSize: 80 }} />
+                            <FontAwesomeIcon icon={faHtml5} style={{ color: "#356277", fontSize: 80 }} />
+                            {/* <DevicesOutlined style={{ color: "#356277", fontSize: 80 }} /> */}
                             <h2>HTML 5</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
-                            <PaletteOutlined style={{ color: pink[500], fontSize: 80 }} />
+                            <FontAwesomeIcon icon={faCss3} style={{ color: "#356277", fontSize: 80 }} />
+                            {/* <FontAwesomeIcon icon="coffee" /> */}
                             <h2>CSS3</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
-                            <SettingsOutlined style={{ color: pink[500], fontSize: 80 }} />
+                            <FontAwesomeIcon icon={faJs} style={{ color: "#356277", fontSize: 80 }} />
                             <h2>Javascript</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
-                            <DevicesOutlined style={{ color: pink[500], fontSize: 80 }} />
+                            <FontAwesomeIcon icon={faReact} style={{ color: "#356277", fontSize: 80 }} />
+                            <h2>React</h2>
+                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
+                        <Paper className={classes.paper}>
+                            <FontAwesomeIcon icon={faWindows} style={{ color: "#356277", fontSize: 80 }} />
                             <h2>Business Stratagy</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
-                            <DevicesOutlined style={{ color: pink[500], fontSize: 80 }} />
-                            <h2>Business Stratagy</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
-                        <Paper className={classes.paper}>
-                            <DevicesOutlined style={{ color: pink[500], fontSize: 80 }} />
+                            <FontAwesomeIcon icon={faConnectdevelop} style={{ color: "#356277", fontSize: 80 }} />
                             <h2>Business Stratagy</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>

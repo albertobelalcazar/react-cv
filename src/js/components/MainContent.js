@@ -3,8 +3,9 @@ import Header from './Header';
 import Jumbotron from './Jumbotron';
 import Skills from './Skills';
 import Carousell from './Carousell';
-import Boxes from './Boxes';
+import FunFacts from './FunFacts';
 import Footer from './Footer';
+import ExperienceStudies from './ExperienceStudies';
 
 const MainContent = () => {
     return (
@@ -12,8 +13,11 @@ const MainContent = () => {
             <Header />
             <Jumbotron />
             <Skills />
+            <ExperienceStudies />
             <Carousell />
-            <Boxes />
+            <FunFacts />
+            {/* <Boxes /> */}
+
             <Footer />
         </div>
     );
