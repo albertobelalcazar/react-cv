@@ -61,14 +61,14 @@ const Skills = () => {
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
                             <FontAwesomeIcon icon={faWindows} style={{ color: "#356277", fontSize: 80 }} />
-                            <h2>Business Stratagy</h2>
+                            <h2>.NET</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
                             <FontAwesomeIcon icon={faConnectdevelop} style={{ color: "#356277", fontSize: 80 }} />
-                            <h2>Business Stratagy</h2>
+                            <h2>CMS</h2>
                             <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
                         </Paper>
                     </Grid>

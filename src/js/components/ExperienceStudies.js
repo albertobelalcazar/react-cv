@@ -32,7 +32,7 @@ const ExperienceStudies = () => {
         setExpanded(isExpanded ? panel : false);
     };
     return (
-        <div className={classes.root} id="#ExperienceStudies">
+        <div className={classes.root} id="ExperienceStudies">
             <Grid container spacing={0} alignItems="center" justify="center">
                 <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

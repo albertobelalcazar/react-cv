@@ -6,6 +6,7 @@ import Carousell from './Carousell';
 import FunFacts from './FunFacts';
 import Footer from './Footer';
 import ExperienceStudies from './ExperienceStudies';
+import ScrollToTop from './ScrollToTop';
 
 const MainContent = () => {
     return (
@@ -16,9 +17,8 @@ const MainContent = () => {
             <ExperienceStudies />
             <Carousell />
             <FunFacts />
-            {/* <Boxes /> */}
-
             <Footer />
+            <ScrollToTop />
         </div>
     );
 };
