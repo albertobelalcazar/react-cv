@@ -1,0 +1,48 @@
+.aboutme {
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+
+    h2 {
+        padding: 20px 0;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    &__content {
+        display: flex;
+        padding: 20px;
+
+        @media screen and (max-width: 758px) {
+            flex-wrap: wrap;
+        }
+
+        &_image img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        &_text {
+            // background: lightgrey;
+            max-width: 60%;
+            padding: 0 20px;
+
+            @media screen and (max-width: 758px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.wp-block-columns {
+    display: flex;
+
+    @media screen and (max-width: 758px) {
+        flex-wrap: wrap;
+    }
+}
+
+.wp-block-column {
+    padding: 20px;
+}

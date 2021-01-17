@@ -1,12 +1,20 @@
 import React from 'react';
-import { LinkedIn, YouTube, Facebook } from '@material-ui/icons';
+import Link from '@material-ui/core/Link';
+import { LinkedIn, YouTube, Facebook, Email } from '@material-ui/icons';
 
 const Footer = () => {
+
     return (
-        <div className="footer">
-            <LinkedIn style={{ fontSize: 70 }} />
-            <YouTube style={{ fontSize: 70 }} />
-            <Facebook style={{ fontSize: 70 }} />
+        <div className="footer" id="contact">
+            <Link href="https://www.linkedin.com/in/albertobelalcazar/" target="_blank" rel="noopener" color="inherit">
+                <LinkedIn style={{ fontSize: 70 }} />
+            </Link>
+            <Link href="https://www.youtube.com/c/KreaMegas/about" target="_blank" rel="noopener" color="inherit">
+                <YouTube style={{ fontSize: 70 }} />
+            </Link>
+            <Link href="mailto:info@alberto.codes" target="_blank" rel="noopener" color="inherit">
+                <Email style={{ fontSize: 70 }} />
+            </Link>
         </div>
     );
 };

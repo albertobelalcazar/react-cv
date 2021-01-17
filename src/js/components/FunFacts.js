@@ -15,16 +15,17 @@ const useStyles = makeStyles((theme) => ({
         padding: "60px 45px",
     },
     h2: {
-        fontSize: "50px",
+        fontSize: "60px",
         padding: "20px 0",
-        color: "rgb(53, 98, 119)",
+        color: "#356277",
+        marginLeft: "15px",
     },
     p: {
         lineHeight: "30px",
     },
     title: {
         fontSize: "50px",
-        color: "#333",
+        color: "#356277",
     },
 }));
 

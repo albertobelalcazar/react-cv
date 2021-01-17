@@ -6,6 +6,8 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Grid from '@material-ui/core/Grid';
+import GridListTile from '@material-ui/core/GridListTile'
+import ListSubheader from '@material-ui/core/ListSubheader'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -46,14 +48,14 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                <span>
+                                <span className="list_ExperienceStudies">
                                     <span>Agile Development Practices</span>
                                     <span>CSS Essential Training 3</span>
                                     <span>CSS Essential Training 2</span>
                                     <span>CSS Essential Training 1</span>
                                     <span>HTML Essential Training</span>
                                     <span>Programming Foundations: Fundamentals</span>
-                                    <span>UX Foundations: Accessibility</span>
+                                    <span>UX Foundations: Accessibispanty</span>
                                     <span>User Experience for Web Designers</span>
                                     <span>HTML & CSS: Creating Forms</span>
                                     <span>Web Development Foundations: Full-Stack vs Front-End</span>
@@ -80,9 +82,11 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Google Analytics del 1 +2 Introduktions- samt fördjupningskurs av Outfox/Google, Januari 2015.<br />
-                    AdWords Advertising Fundamentals, en tredagars kurs hos Google, Mars, 2015.
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>Google Analytics del 1 +2 Introduktions- samt fördjupningskurs av Outfox/Google, Januari 2015.</span>
+                                    <span>AdWords Advertising Fundamentals, en tredagars kurs hos Google, Mars, 2015.</span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -98,8 +102,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Certifierad cirkelledare för ABF (Arbetanas Bildningsförbund) 2014
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Certifierad cirkelledare för ABF (Arbetanas Bildningsförbund) 2014
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -115,8 +123,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Utbildningen Webbutvecklare med RIA
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Utbildningen Webbutvecklare med RIA
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
@@ -132,8 +144,33 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Kompleterande kurser inför framtida studier
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Kompleterande kurser inför framtida studier
+                                    </span>
+                                </span>
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel6bh-content"
+                            id="panel6bh-header"
+                        >
+                            <Typography className={classes.heading}>ABF</Typography>
+                            <Typography className={classes.secondaryHeading}>
+                                Arbetanas Bildningsförbund
           </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Certifierad cirkelledare för ABF (Arbetanas Bildningsförbund) 2014
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
@@ -149,8 +186,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Förvaltning - Ny utveckling på alla produkter som finns på Webben
-                    </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Förvaltning - Ny utveckling på alla produkter som finns på Webben
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
@@ -166,8 +207,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                FrontEnd utvecklare av mobil annonser till olika stora internationella företag
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        FrontEnd utvecklare av mobil annonser till olika stora internationella företag
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
@@ -183,8 +228,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Jag har drivit några kurser på ABF, som cirkelledare hjälpe jag folk t.ex. att skapa och driva en hemsida samt olika data kurser för nybörjare och avancerat nivå
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Jag har drivit några kurser på ABF, som cirkelledare hjälpe jag folk t.ex. att skapa och driva en hemsida samt olika data kurser för nybörjare och avancerat nivå
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
@@ -200,8 +249,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Webbyrå / utvecklare av Hemsidor åt olika små och medelstora företag
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Webbyrå / utvecklare av Hemsidor åt olika små och medelstora företag
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
@@ -217,8 +270,12 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Webbutvecklare av yhc3l.se
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Webbutvecklare av yhc3l.se
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                     <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
@@ -234,18 +291,16 @@ const ExperienceStudies = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Webbutvecklare av externit.se fireconsultancy.se
-          </Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        Webbutvecklare av externit.se fireconsultancy.se
+                                    </span>
+                                </span>
+                            </Typography>
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
             </Grid>
-
-
-
-
-
-
         </div>
     );
 };

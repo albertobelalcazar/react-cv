@@ -74,10 +74,37 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const skillsLinks = {
-    URL: "#ExperienceStudies",
-    behavior: 'smooth',
-    block: 'start'
+const menulinks = {
+    startsida: {
+        URL: "/cv",
+        behavior: 'smooth',
+        block: 'start'
+    },
+    aboutme: {
+        URL: "/cv/aboutme",
+        behavior: 'smooth',
+        block: 'start'
+    },
+    skills: {
+        URL: "/cv/#ExperienceStudies",
+        behavior: 'smooth',
+        block: 'start'
+    },
+    experience: {
+        URL: "/cv/#ExperienceStudies",
+        behavior: 'smooth',
+        block: 'start'
+    },
+    portfolj: {
+        URL: "/cv/#portfolj",
+        behavior: 'smooth',
+        block: 'start'
+    },
+    contact: {
+        URL: "/cv/#contact",
+        behavior: 'smooth',
+        block: 'start'
+    }
 }
 
 
@@ -159,12 +186,12 @@ const Header = (props) => {
                         </Hidden>
                         <Typography variant="h6" className={classes.title}>Logo</Typography>
                         <Hidden smDown>
-                            <Button className={classes.rightMenu}>Startsida</Button>
-                            <Button className={classes.rightMenu}>Om mig</Button>
-                            <Button href={skillsLinks.URL} className={classes.rightMenu}>Kompetens</Button>
-                            <Button className={classes.rightMenu}>Erfarenhet</Button>
-                            <Button className={classes.rightMenu}>Portofölj</Button>
-                            <Button className={classes.rightMenu}>Kontakt</Button>
+                            <Button href={menulinks.startsida.URL} className={classes.rightMenu}>Startsida</Button>
+                            <Button href={menulinks.aboutme.URL} className={classes.rightMenu}>Om mig</Button>
+                            <Button href={menulinks.skills.URL} className={classes.rightMenu}>Kompetens</Button>
+                            <Button href={menulinks.experience.URL} className={classes.rightMenu}>Erfarenhet</Button>
+                            <Button href={menulinks.portfolj.URL} className={classes.rightMenu}>Portofölj</Button>
+                            <Button href={menulinks.contact.URL} className={classes.rightMenu}>Kontakt</Button>
                         </Hidden>
 
 

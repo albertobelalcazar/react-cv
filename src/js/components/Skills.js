@@ -33,7 +33,7 @@ const Skills = () => {
                             <FontAwesomeIcon icon={faHtml5} style={{ color: "#356277", fontSize: 80 }} />
                             {/* <DevicesOutlined style={{ color: "#356277", fontSize: 80 }} /> */}
                             <h2>HTML 5</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.!!</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>

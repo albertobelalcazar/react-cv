@@ -18,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
         background: "#f6f6f6",
         padding: "60px 45px",
     },
-    h2: {
+    h1: {
         fontSize: "50px",
         margin: "50px 0 3px 0",
         padding: "20px 0",
-        color: "#333",
+        color: "#356277",
         textAlign: "left",
     },
     p: {
@@ -56,9 +56,9 @@ const items = [
 const Carousell = () => {
     const classes = useStyles();
     return (
-        <div className="carousell-container">
+        <div className="carousell-container" id="portfolj">
             <div className="custom-carousell">
-                <h2 className={classes.h2}>Min Portfölj</h2>
+                <h1 className={classes.h1}>Min Portfölj</h1>
                 <p className={classes.p}>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                 <br />
                 <AliceCarousel
