@@ -16,28 +16,29 @@
     min-height: 600px;
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: -2;
 }
 
 .jumbotron-cover-legend--one {
+    position: relative;
     color: white;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 60px;
     z-index: 999999;
-    position: absolute;
     display: block;
-    width: 100%;
-    text-align: center;
-    top: 30%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 200px;
     text-shadow: 1px 1px #333;
+
 }
 
 .jumbotron__legacy {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .jumbotron__title-legacy {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 
