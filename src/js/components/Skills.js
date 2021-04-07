@@ -33,7 +33,7 @@ const Skills = () => {
                             <FontAwesomeIcon icon={faHtml5} style={{ color: "#356277", fontSize: 80 }} />
                             {/* <DevicesOutlined style={{ color: "#356277", fontSize: 80 }} /> */}
                             <h2>HTML 5</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.!!</p>
+                            <p>Det är vitigt att bygga en bra struktur med alla elementer på sajten</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
@@ -41,21 +41,21 @@ const Skills = () => {
                             <FontAwesomeIcon icon={faCss3} style={{ color: "#356277", fontSize: 80 }} />
                             {/* <FontAwesomeIcon icon="coffee" /> */}
                             <h2>CSS3</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                            <p>Jag älskar att bygga moderna, bygga och responsiva sajter, SASS, CSS är en viktigt del i min vardag</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
                             <FontAwesomeIcon icon={faJs} style={{ color: "#356277", fontSize: 80 }} />
                             <h2>Javascript</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                            <p>9 + "1" = "91" eller 9 - "1" = 8 Ja, jag vet så är det med javascript :) och ändå jag gillar utveckla med det</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>
                         <Paper className={classes.paper}>
                             <FontAwesomeIcon icon={faReact} style={{ color: "#356277", fontSize: 80 }} />
                             <h2>React</h2>
-                            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+                            <p>Det här CV:et är skapat i react</p>
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4} style={{ padding: 10 }}>

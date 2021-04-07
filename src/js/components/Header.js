@@ -26,7 +26,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        background: "#163643",
+        background: "#1d353e",
     },
     burgerBtn: {
         marginRight: theme.spacing(2),

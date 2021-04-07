@@ -5,13 +5,14 @@ const Jumbotron = () => {
         <div className="jumbotron">
             <div className="jumbotron-cover-image"></div>
             <div className="jumbotron-cover-overlay"></div>
-            <div className="jumbotron-cover-legend--one" id="back-to-top-anchor">
-                <div className="jumbotron__title-legacy">
-                    {/* Hej <span style={{ color: "&#x1F44B" }}>&#x1F44B;</span>,Alberto här!<br /> */}
+            <div className="jumbotron-cover-legend" id="back-to-top-anchor">
+                <div className="jumbotron__legend--name">
                     Hej, Alberto här!
                 </div>
-                Front-End developer <br />
-                <div className="jumbotron__legacy">
+                <div className="jumbotron__legend--experience">
+                    Webb & Front-End utvecklare
+                </div>
+                <div className="jumbotron__legend--legacy">
                     med <span style={{ color: "#f50057" }}>&#x2764;</span> för tekniken
                 </div>
 
