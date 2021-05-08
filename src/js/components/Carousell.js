@@ -59,7 +59,7 @@ const Carousell = () => {
         <div className="carousell-container" id="portfolj">
             <div className="custom-carousell">
                 <h1 className={classes.h1}>Min Portfölj</h1>
-                <p className={classes.p}>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                <p className={classes.p}>Här är några exempel på arbeter som jag har utfört: </p>
                 <br />
                 <AliceCarousel
                     mouseTracking

@@ -1,0 +1,31 @@
+.ExperienceStudies {
+
+    &_studies {
+        background: aqua;
+        max-width: 47%;
+        padding: 15px;
+
+
+    }
+
+    &_experience {
+        background: rgb(31, 150, 247);
+        max-width: 47%;
+        padding: 15px;
+    }
+}
+
+.ExperienceStudies_column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+.list_ExperienceStudies {
+    span {
+        display: block;
+        margin-left: 10px;
+    }
+}

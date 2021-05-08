@@ -8,6 +8,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Grid from '@material-ui/core/Grid';
 import GridListTile from '@material-ui/core/GridListTile'
 import ListSubheader from '@material-ui/core/ListSubheader'
+import Image from './../../assets/k-z-tp0BLGIv4dU-unsplash.jpg';
+import { Block, Height } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,10 +22,33 @@ const useStyles = makeStyles((theme) => ({
         flexBasis: '33.33%',
         flexShrink: 0,
     },
+    h1: {
+        fontSize: "50px",
+        margin: "50px 0 3px 0",
+        padding: "20px 0",
+        color: "#356277",
+        textAlign: "left",
+    },
     secondaryHeading: {
         fontSize: theme.typography.pxToRem(15),
         color: theme.palette.text.secondary,
     },
+
+    imageES: {
+        display: "block",
+        width: "100%",
+    },
+    accordion: {
+        '&:hover, &[aria-expanded="true"]': {
+            background: "#F50057",
+            transition: ".4s",
+            color: "#fff",
+            '& p,svg': {
+                color: "#fff",
+            }
+        }
+        // marginBottom: "5px !important",
+    }
 }));
 
 const ExperienceStudies = () => {
@@ -35,10 +60,13 @@ const ExperienceStudies = () => {
     };
     return (
         <div className={classes.root} id="ExperienceStudies">
-            <Grid container spacing={0} alignItems="center" justify="center">
-                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
+            <Grid container spacing={0} alignItems="stretch" justify="center">
+                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }} direction="column">
+                    <h1 className={classes.h1}>Utbildning</h1>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
+                            elevation={0}
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1bh-content"
                             id="panel1bh-header"
@@ -71,6 +99,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel2bh-content"
                             id="panel2bh-header"
@@ -91,6 +120,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel3bh-content"
                             id="panel3bh-header"
@@ -112,6 +142,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4bh-content"
                             id="panel4bh-header"
@@ -133,6 +164,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel5bh-content"
                             id="panel5bh-header"
@@ -154,6 +186,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                     <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel6bh-content"
                             id="panel6bh-header"
@@ -174,12 +207,15 @@ const ExperienceStudies = () => {
                         </AccordionDetails>
                     </Accordion>
                 </Grid>
-                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
-                    <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+
+                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }} direction="column">
+                    <h1 className={classes.h1}>Erfarenhet</h1>
+                    <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel6bh-content"
-                            id="panel6bh-header"
+                            aria-controls="panel7bh-content"
+                            id="panel7bh-header"
                         >
                             <Typography className={classes.heading}>Svedea</Typography>
                             <Typography className={classes.secondaryHeading}>Webutvecklare / FrontEnd utvecklare</Typography>
@@ -194,11 +230,12 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                    <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel7bh-content"
-                            id="panel7bh-header"
+                            aria-controls="panel8bh-content"
+                            id="panel8bh-header"
                         >
                             <Typography className={classes.heading}>Widespace - Premium Mobile Advertising</Typography>
                             <Typography className={classes.secondaryHeading}>
@@ -215,11 +252,12 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
+                    <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel8bh-content"
-                            id="panel8bh-header"
+                            aria-controls="panel9bh-content"
+                            id="panel9bh-header"
                         >
                             <Typography className={classes.heading}>Cirkelledare på ABF</Typography>
                             <Typography className={classes.secondaryHeading}>
@@ -236,11 +274,12 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
+                    <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel9bh-content"
-                            id="panel9bh-header"
+                            aria-controls="panel10bh-content"
+                            id="panel10bh-header"
                         >
                             <Typography className={classes.heading}>KreaMegas</Typography>
                             <Typography className={classes.secondaryHeading}>
@@ -257,11 +296,12 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                    <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel10bh-content"
-                            id="panel10bh-header"
+                            aria-controls="panel11bh-content"
+                            id="panel11bh-header"
                         >
                             <Typography className={classes.heading}>Yrkeshögskola C3L</Typography>
                             <Typography className={classes.secondaryHeading}>
@@ -278,11 +318,12 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                    <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
                         <AccordionSummary
+                            className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel10bh-content"
-                            id="panel10bh-header"
+                            aria-controls="panel12bh-content"
+                            id="panel12bh-header"
                         >
                             <Typography className={classes.heading}>Extern-IT</Typography>
                             <Typography className={classes.secondaryHeading}>

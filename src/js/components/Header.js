@@ -86,12 +86,12 @@ const menulinks = {
         block: 'start'
     },
     skills: {
-        URL: "/cv/#ExperienceStudies",
+        URL: "/cv/#Experience",
         behavior: 'smooth',
         block: 'start'
     },
     experience: {
-        URL: "/cv/#ExperienceStudies",
+        URL: "/cv/#Studies",
         behavior: 'smooth',
         block: 'start'
     },
@@ -178,24 +178,26 @@ const Header = (props) => {
         <React.Fragment>
             <HideOnScroll {...props}>
                 <AppBar className={classes.root}>
-                    <Toolbar>
-                        <Hidden mdUp>
-                            <IconButton edge="start" className={classes.burgerBtn} color="inherit" aria-label="menu" onClick={handleDrawerToggle}>
-                                <MenuIcon />
-                            </IconButton>
-                        </Hidden>
-                        <Typography variant="h6" className={classes.title}>Logo</Typography>
-                        <Hidden smDown>
-                            <Button href={menulinks.startsida.URL} className={classes.rightMenu}>Startsida</Button>
-                            <Button href={menulinks.aboutme.URL} className={classes.rightMenu}>Om mig</Button>
-                            <Button href={menulinks.skills.URL} className={classes.rightMenu}>Kompetens</Button>
-                            <Button href={menulinks.experience.URL} className={classes.rightMenu}>Erfarenhet</Button>
-                            <Button href={menulinks.portfolj.URL} className={classes.rightMenu}>Portofölj</Button>
-                            <Button href={menulinks.contact.URL} className={classes.rightMenu}>Kontakt</Button>
-                        </Hidden>
+                    <div className="menyNav">
+                        <Toolbar>
+                            <Hidden mdUp>
+                                <IconButton edge="start" className={classes.burgerBtn} color="inherit" aria-label="menu" onClick={handleDrawerToggle}>
+                                    <MenuIcon />
+                                </IconButton>
+                            </Hidden>
+                            <Typography variant="h6" className={classes.title}>Logo</Typography>
+                            <Hidden smDown>
+                                <Button href={menulinks.startsida.URL} className={classes.rightMenu}>Startsida</Button>
+                                <Button href={menulinks.aboutme.URL} className={classes.rightMenu}>Om mig</Button>
+                                <Button href={menulinks.skills.URL} className={classes.rightMenu}>Kompetens</Button>
+                                <Button href={menulinks.experience.URL} className={classes.rightMenu}>Erfarenhet</Button>
+                                <Button href={menulinks.portfolj.URL} className={classes.rightMenu}>Portofölj</Button>
+                                <Button href={menulinks.contact.URL} className={classes.rightMenu}>Kontakt</Button>
+                            </Hidden>
 
 
-                    </Toolbar>
+                        </Toolbar>
+                    </div>
                 </AppBar>
             </HideOnScroll>
             <nav className={classes.drawer} aria-label="mailbox folders">
