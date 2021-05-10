@@ -61,7 +61,7 @@ const ExperienceStudies = () => {
     return (
         <div className={classes.root} id="ExperienceStudies">
             <Grid container spacing={0} alignItems="stretch" justify="center">
-                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }} direction="column">
+                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
                     <h1 className={classes.h1}>Utbildning</h1>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
@@ -208,7 +208,7 @@ const ExperienceStudies = () => {
                     </Accordion>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }} direction="column">
+                <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
                     <h1 className={classes.h1}>Erfarenhet</h1>
                     <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary
