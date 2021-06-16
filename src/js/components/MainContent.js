@@ -9,6 +9,7 @@ import Footer from './Footer';
 import ExperienceStudies from './ExperienceStudies';
 import ScrollToTop from './ScrollToTop';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Testimonials from './Testimonials';
 
 const MainContent = () => {
     return (
@@ -16,17 +17,18 @@ const MainContent = () => {
             <Router>
                 <Header />
                 <Switch>
-                    <Route path="/cv/aboutme">
+                    <Route path="/aboutme">
                         <Jumbotron />
                         <Aboutme />
                         <Footer />
 
                     </Route>
-                    <Route path="/cv">
+                    <Route path="/">
                         <Jumbotron />
                         <Skills />
                         <ExperienceStudies />
                         <Carousell />
+                        <Testimonials />
                         <FunFacts />
                         <Footer />
                     </Route>

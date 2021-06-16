@@ -105,7 +105,6 @@ const Skills = () => {
                             <p>Jag har jobbat med olika CMS system som till exempel, Wordpress, Joomla, Drupal, och flera ehandels plataformar. </p>
                         </Paper>
                     </Grid>
-
                 </Grid>
             </div>
         </div >

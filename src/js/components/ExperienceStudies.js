@@ -6,16 +6,13 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Grid from '@material-ui/core/Grid';
-import GridListTile from '@material-ui/core/GridListTile'
-import ListSubheader from '@material-ui/core/ListSubheader'
-import Image from './../../assets/k-z-tp0BLGIv4dU-unsplash.jpg';
-import { Block, Height } from '@material-ui/icons';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         maxWidth: '1200px',
-        margin: '50px auto 0 auto'
+        margin: '50px auto 0 auto',
     },
     heading: {
         fontSize: theme.typography.pxToRem(15),
@@ -33,22 +30,25 @@ const useStyles = makeStyles((theme) => ({
         fontSize: theme.typography.pxToRem(15),
         color: theme.palette.text.secondary,
     },
-
     imageES: {
         display: "block",
         width: "100%",
     },
     accordion: {
         '&:hover, &[aria-expanded="true"]': {
-            background: "#F50057",
+            background: "#073b4c",
             transition: ".4s",
             color: "#fff",
             '& p,svg': {
                 color: "#fff",
             }
         }
-        // marginBottom: "5px !important",
-    }
+    },
+    expanded: {
+        '&$expanded': {
+            margin: "0",
+        }
+    },
 }));
 
 const ExperienceStudies = () => {
@@ -62,8 +62,8 @@ const ExperienceStudies = () => {
         <div className={classes.root} id="ExperienceStudies">
             <Grid container spacing={0} alignItems="stretch" justify="center">
                 <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
-                    <h1 className={classes.h1}>Utbildning</h1>
-                    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                    <h1 className={classes.h1} id="studies">Utbildning</h1>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
                             elevation={0}
                             className={classes.accordion}
@@ -71,8 +71,8 @@ const ExperienceStudies = () => {
                             aria-controls="panel1bh-content"
                             id="panel1bh-header"
                         >
-                            <Typography className={classes.heading}>LinkedIn Learning</Typography>
-                            <Typography className={classes.secondaryHeading}>Övriga professionella kurser</Typography>
+                            <Typography className={classes.heading}>Fullföljda kurser via E-Learning</Typography>
+                            <Typography className={classes.secondaryHeading}>LinkedIn (FRÅN 2015 - NUTID)</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -97,7 +97,7 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -107,7 +107,7 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>Google Analytics / Google Adwords</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 2 dagars kurs från Google
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -118,17 +118,17 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel3bh-content"
                             id="panel3bh-header"
                         >
-                            <Typography className={classes.heading}>ABF</Typography>
+                            <Typography className={classes.heading}>Cirkelledare - ABF</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 Arbetanas Bildningsförbund
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -140,29 +140,29 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4bh-content"
                             id="panel4bh-header"
                         >
-                            <Typography className={classes.heading}>Yrkeshögskola</Typography>
+                            <Typography className={classes.heading}>Webbutvecklare med RIA • 2009 - 2010</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 C3L
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Utbildningen Webbutvecklare med RIA
+                                        Yrkesutbildning, Läste till webbutvecklare med RIA, utveckling av bokningssystem med Java, Actionscript 2.0 med mera.
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -172,7 +172,7 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>Norrtälje Kommunala Vuxenutbildning</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 NKV
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -184,7 +184,7 @@ const ExperienceStudies = () => {
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                    {/* <Accordion className={classes.expanded} expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -194,7 +194,7 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>ABF</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 Arbetanas Bildningsförbund
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -205,12 +205,12 @@ const ExperienceStudies = () => {
                                 </span>
                             </Typography>
                         </AccordionDetails>
-                    </Accordion>
+                    </Accordion> */}
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
-                    <h1 className={classes.h1}>Erfarenhet</h1>
-                    <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                    <h1 className={classes.h1} id="experience">Erfarenhet</h1>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -224,13 +224,16 @@ const ExperienceStudies = () => {
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Förvaltning - Ny utveckling på alla produkter som finns på Webben
+                                        <span>Ledande roll som Front-End utvecklare for hela Svedea.se</span>
+                                        <span>Varit drivande i utvecklingen av företagsförsäkring som är React-baserad.</span>
+                                        <a href="https://www.svedea.se/foretagsforsakring" target="_blank" rel="noopener noreferrer">https://www.svedea.se/foretagsforsakring</a>
+                                        <span>På Svedea hade vi WebTalks, på fredagar där jag hållit i föreläsningar för mina kollegor inom Git/Github på nybörjarnivå samt Css/Sass.</span>
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -240,19 +243,19 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>Widespace - Premium Mobile Advertising</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 FrontEnd utvecklare
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        FrontEnd utvecklare av mobil annonser till olika stora internationella företag
+                                        Arbetade som front-end utvecklare med GreenSock JS, Photoshop samt Adobe Illustrator bland annat.
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -262,19 +265,19 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>Cirkelledare på ABF</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 Arbetanas Bildningsförbund
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Jag har drivit några kurser på ABF, som cirkelledare hjälpe jag folk t.ex. att skapa och driva en hemsida samt olika data kurser för nybörjare och avancerat nivå
+                                        Uppskattad och efterfrågad cirkelledare för flertalet kurser inom webbutveckling, grundkurs i dator samt E-Commerce.
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -284,19 +287,20 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>KreaMegas</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 Egenföretagare
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Webbyrå / utvecklare av Hemsidor åt olika små och medelstora företag
+                                        <span>Drev eget företag inom webbdesign.</span>
+                                        <span>Utveckling av hemsidor, planering och genomförande av projekten, kontakt med samt samarbete med kunderna. Utveckling av många olika typer av hemsidor.</span>
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -305,20 +309,20 @@ const ExperienceStudies = () => {
                         >
                             <Typography className={classes.heading}>Yrkeshögskola C3L</Typography>
                             <Typography className={classes.secondaryHeading}>
-                                Webbutvecklare
-          </Typography>
+                                Webdesigner, Front-End utvecklare
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Webbutvecklare av yhc3l.se
+                                        Projektanställning inom webbutveckling avseende deras hemsida.
                                     </span>
                                 </span>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
                         <AccordionSummary
                             className={classes.accordion}
                             expandIcon={<ExpandMoreIcon />}
@@ -328,13 +332,13 @@ const ExperienceStudies = () => {
                             <Typography className={classes.heading}>Extern-IT</Typography>
                             <Typography className={classes.secondaryHeading}>
                                 Webbutvecklare
-          </Typography>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
                                 <span className="list_ExperienceStudies">
                                     <span>
-                                        Webbutvecklare av externit.se fireconsultancy.se
+                                        Projektanställning inom webbutveckling för tre olika hemsidor (Tre olika företag inom samma koncern).
                                     </span>
                                 </span>
                             </Typography>

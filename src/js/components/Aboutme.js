@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
 import parse from "html-react-parser";
 import Mountain from './../../assets/about_mountain.jpg';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { FitnessCenterSharp } from "@material-ui/icons";
 
 export default function App() {
     const [post, setPost] = useState(null);
@@ -25,7 +23,7 @@ export default function App() {
         // }, 3000);
         // return () => clearTimeout(timer);
 
-        fetch('http://alberto.codes/wp/wp-json/wp/v2/posts/15')
+        fetch('https://alberto.codes/wp/wp-json/wp/v2/posts/15')
             .then((response) => {
                 console.log(response)
                 return response.json();

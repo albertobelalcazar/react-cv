@@ -8,9 +8,16 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
+import FaceIcon from '@material-ui/icons/Face';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import { Hidden } from '@material-ui/core';
+import CastForEducationIcon from '@material-ui/icons/CastForEducation';
+import WorkIcon from '@material-ui/icons/Work';
+import BusinessIcon from '@material-ui/icons/Business';
+import PhonelinkIcon from '@material-ui/icons/Phonelink';
+import logo from '../../assets/logo.png';
 
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
@@ -19,21 +26,23 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Skills from './Skills';
+
+
+
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        background: "#1d353e",
+        background: "#1D353E",
     },
     burgerBtn: {
         marginRight: theme.spacing(2),
-        color: "white",
+        color: "#1d353e",
     },
     rightMenu: {
-        color: "white",
+        color: "#fff",
         justifyContent: "space-around",
         marginLeft: 20,
     },
@@ -76,32 +85,32 @@ const useStyles = makeStyles((theme) => ({
 
 const menulinks = {
     startsida: {
-        URL: "/cv",
+        URL: "/",
         behavior: 'smooth',
         block: 'start'
     },
     aboutme: {
-        URL: "/cv/aboutme",
+        URL: "/aboutme",
         behavior: 'smooth',
         block: 'start'
     },
     skills: {
-        URL: "/cv/#Experience",
+        URL: "/#experience",
         behavior: 'smooth',
         block: 'start'
     },
     experience: {
-        URL: "/cv/#Studies",
+        URL: "/#studies",
         behavior: 'smooth',
         block: 'start'
     },
     portfolj: {
-        URL: "/cv/#portfolj",
+        URL: "/#portfolj",
         behavior: 'smooth',
         block: 'start'
     },
     contact: {
-        URL: "/cv/#contact",
+        URL: "/#contact",
         behavior: 'smooth',
         block: 'start'
     }
@@ -154,7 +163,7 @@ const Header = (props) => {
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Kompetens</ListItemText>
+                    <ListItemText>Utbildning</ListItemText>
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon><InboxIcon /></ListItemIcon>
@@ -185,14 +194,14 @@ const Header = (props) => {
                                     <MenuIcon />
                                 </IconButton>
                             </Hidden>
-                            <Typography variant="h6" className={classes.title}>Logo</Typography>
+                            <Typography variant="h6" className={classes.title}><img src={logo} alt="Alberto Belalcázar" /></Typography>
                             <Hidden smDown>
-                                <Button href={menulinks.startsida.URL} className={classes.rightMenu}>Startsida</Button>
-                                <Button href={menulinks.aboutme.URL} className={classes.rightMenu}>Om mig</Button>
-                                <Button href={menulinks.skills.URL} className={classes.rightMenu}>Kompetens</Button>
-                                <Button href={menulinks.experience.URL} className={classes.rightMenu}>Erfarenhet</Button>
-                                <Button href={menulinks.portfolj.URL} className={classes.rightMenu}>Portofölj</Button>
-                                <Button href={menulinks.contact.URL} className={classes.rightMenu}>Kontakt</Button>
+                                <Button style={{ display: 'flex', alignItems: 'center' }} href={menulinks.startsida.URL} className={classes.rightMenu}><HomeIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} /> Startsida</Button>
+                                <Button href={menulinks.aboutme.URL} className={classes.rightMenu}><FaceIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Om mig</Button>
+                                <Button href={menulinks.skills.URL} className={classes.rightMenu}><CastForEducationIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Utbildning</Button>
+                                <Button href={menulinks.experience.URL} className={classes.rightMenu}><BusinessIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Erfarenhet</Button>
+                                <Button href={menulinks.portfolj.URL} className={classes.rightMenu}><WorkIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Portofölj</Button>
+                                <Button href={menulinks.contact.URL} className={classes.rightMenu}><PhonelinkIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Kontakt</Button>
                             </Hidden>
 
 

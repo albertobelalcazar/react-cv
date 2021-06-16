@@ -43,6 +43,6 @@
     }
 }
 
-.wp-block-column {
-    padding: 20px;
+.wp-block-column:first-child {
+    padding: 0 20px 0 0;
 }

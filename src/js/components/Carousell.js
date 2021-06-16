@@ -1,6 +1,4 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Slider2 from './../../assets/portfolio-2.jpg';
 import Svedea from './../../assets/svedea.png';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -46,11 +44,11 @@ const responsive = {
 
 const items = [
     <div className="item"><img src={Svedea} alt="" /></div>,
-    <div className="item"><img src={Slider2} alt="" /></div>,
-    <div className="item"><img src={Slider2} alt="" /></div>,
-    <div className="item"><img src={Slider2} alt="" /></div>,
-    <div className="item"><img src={Slider2} alt="" /></div>,
-    <div className="item"><img src={Slider2} alt="" /></div>,
+    // <div className="item"><img src={Slider2} alt="" /></div>,
+    // <div className="item"><img src={Slider2} alt="" /></div>,
+    // <div className="item"><img src={Slider2} alt="" /></div>,
+    // <div className="item"><img src={Slider2} alt="" /></div>,
+    // <div className="item"><img src={Slider2} alt="" /></div>,
 ];
 
 const Carousell = () => {
