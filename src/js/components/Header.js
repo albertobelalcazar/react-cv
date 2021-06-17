@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     },
     burgerBtn: {
         marginRight: theme.spacing(2),
-        color: "#1d353e",
+        color: "#FFF",
     },
     rightMenu: {
         color: "#fff",
@@ -75,11 +75,16 @@ const useStyles = makeStyles((theme) => ({
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
         width: drawerWidth,
+        backgroundColor: "#1D353E",
+        color: "#FFF",
     },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
     },
+    iconsDrawer: {
+        color: "#FFF"
+    }
 }));
 
 
@@ -113,10 +118,13 @@ const menulinks = {
         URL: "/#contact",
         behavior: 'smooth',
         block: 'start'
-    }
+    },
+
 }
 
-
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -153,30 +161,30 @@ const Header = (props) => {
             <div className={classes.toolbar} />
             <Divider />
             <List>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Startsida</ListItemText>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Om mig</ListItemText>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Utbildning</ListItemText>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Erfarenhet</ListItemText>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Portofölj</ListItemText>
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon><InboxIcon /></ListItemIcon>
-                    <ListItemText>Kontakt</ListItemText>
-                </ListItem>
+                <ListItemLink href={menulinks.startsida.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><HomeIcon /></ListItemIcon>
+                    <ListItemText>STARTSIDA</ListItemText>
+                </ListItemLink>
+                <ListItemLink href={menulinks.aboutme.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><FaceIcon /></ListItemIcon>
+                    <ListItemText>OM MIG</ListItemText>
+                </ListItemLink>
+                <ListItemLink href={menulinks.experience.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><CastForEducationIcon /></ListItemIcon>
+                    <ListItemText>UTBILDNING</ListItemText>
+                </ListItemLink>
+                <ListItemLink href={menulinks.experience.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><BusinessIcon /></ListItemIcon>
+                    <ListItemText>ERFARENHET</ListItemText>
+                </ListItemLink>
+                <ListItemLink href={menulinks.portfolj.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><WorkIcon /></ListItemIcon>
+                    <ListItemText>PORTFÖLJ</ListItemText>
+                </ListItemLink>
+                <ListItemLink href={menulinks.contact.URL}>
+                    <ListItemIcon className={classes.iconsDrawer}><PhonelinkIcon /></ListItemIcon>
+                    <ListItemText>KONTAKT</ListItemText>
+                </ListItemLink>
             </List>
             <Divider />
         </div>
