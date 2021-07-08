@@ -27,7 +27,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-
+import CloseIcon from '@material-ui/icons/Close';
 
 
 const drawerWidth = 240;
@@ -72,7 +72,9 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     // necessary for content to be below app bar
-    toolbar: theme.mixins.toolbar,
+    toolbar: {
+
+    },
     drawerPaper: {
         width: drawerWidth,
         backgroundColor: "#1D353E",
@@ -84,7 +86,13 @@ const useStyles = makeStyles((theme) => ({
     },
     iconsDrawer: {
         color: "#FFF"
-    }
+    },
+    logoContainer: {
+        maxHeight: "20px",
+        display: "flex",
+        justifyContent: "space-between",
+        margin: "25px 0",
+    },
 }));
 
 
@@ -139,6 +147,7 @@ function HideOnScroll(props) {
         </Slide>
     );
 }
+// const [open, setOpen] = React.useState(false);
 
 HideOnScroll.propTypes = {
     children: PropTypes.element.isRequired,
@@ -158,7 +167,14 @@ const Header = (props) => {
     const classes = useStyles();
     const drawer = (
         <div>
-            <div className={classes.toolbar} />
+            <div className={classes.toolbar}>
+                <div className={classes.logoContainer}>
+                    <img src={logo} alt="Alberto Belalcázar" />
+                    <IconButton onClick={handleDrawerToggle}>
+                        {<CloseIcon style={{ color: "#fff", border: "1px solid #333", borderRadius: "25px" }} />}
+                    </IconButton>
+                </div>
+            </div>
             <Divider />
             <List>
                 <ListItemLink href={menulinks.startsida.URL}>

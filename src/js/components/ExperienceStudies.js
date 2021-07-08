@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     },
     h1: {
         fontSize: "50px",
+        '@media (max-width:500px)': {
+            fontSize: '30px',
+        },
         margin: "50px 0 3px 0",
         padding: "20px 0",
         color: "#356277",

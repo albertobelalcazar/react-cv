@@ -1,5 +1,6 @@
 import React from 'react';
 import Svedea from './../../assets/svedea.png';
+import Amazon from './../../assets/amazon.jpg';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     },
     h1: {
         fontSize: "50px",
+        '@media (max-width:500px)': {
+            fontSize: '30px',
+        },
         margin: "50px 0 3px 0",
         padding: "20px 0",
         color: "#356277",
@@ -43,7 +47,8 @@ const responsive = {
 
 
 const items = [
-    <div className="item"><img src={Svedea} alt="" /></div>,
+    <div className="item"><img src={Svedea} alt="Svedea" /></div>,
+    <div className="item"><img src={Amazon} alt="Amazon" /></div>,
     // <div className="item"><img src={Slider2} alt="" /></div>,
     // <div className="item"><img src={Slider2} alt="" /></div>,
     // <div className="item"><img src={Slider2} alt="" /></div>,
