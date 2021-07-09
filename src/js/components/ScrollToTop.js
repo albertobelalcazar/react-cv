@@ -24,7 +24,7 @@ function ScrollTop(props) {
 
     const handleClick = (event) => {
         const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
-        console.log("clicked");
+        // console.log("clicked");
 
         if (anchor) {
             anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });

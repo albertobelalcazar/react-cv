@@ -20,7 +20,6 @@ import PhonelinkIcon from '@material-ui/icons/Phonelink';
 import logo from '../../assets/logo.png';
 
 import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
