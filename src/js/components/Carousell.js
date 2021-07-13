@@ -1,6 +1,7 @@
 import React from 'react';
 import Svedea from './../../assets/svedea.png';
 import Amazon from './../../assets/amazon.jpg';
+import Facebook from './../../assets/facebook.jpg';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { makeStyles } from '@material-ui/core/styles';
@@ -47,13 +48,16 @@ const responsive = {
 
 
 const items = [
-    <div className="item"><img src={Svedea} alt="Svedea" /></div>,
-    <div className="item"><img src={Amazon} alt="Amazon" /></div>,
-    // <div className="item"><img src={Slider2} alt="" /></div>,
-    // <div className="item"><img src={Slider2} alt="" /></div>,
-    // <div className="item"><img src={Slider2} alt="" /></div>,
-    // <div className="item"><img src={Slider2} alt="" /></div>,
-    // <div className="item"><img src={Slider2} alt="" /></div>,
+    <div className="item">
+        {/* <div className="carousell-overlay">
+            test
+        </div> */}
+        <img src={Svedea} alt="Svedea" />
+    </div>,
+    <div className="item"><img src={Amazon} alt="Amazon" />
+
+    </div>,
+    <div className="item"><img src={Facebook} alt="Facebook" /></div>,
 ];
 
 const Carousell = () => {

@@ -168,7 +168,9 @@ const Header = (props) => {
         <div>
             <div className={classes.toolbar}>
                 <div className={classes.logoContainer}>
-                    <img src={logo} alt="Alberto Belalcázar" />
+                    <a href="/">
+                        <img src={logo} alt="Alberto Belalcázar" />
+                    </a>
                     <IconButton onClick={handleDrawerToggle}>
                         {<CloseIcon style={{ color: "#fff", border: "1px solid #333", borderRadius: "25px" }} />}
                     </IconButton>
@@ -217,7 +219,11 @@ const Header = (props) => {
                                     <MenuIcon />
                                 </IconButton>
                             </Hidden>
-                            <Typography variant="h6" className={classes.title}><img src={logo} alt="Alberto Belalcázar" /></Typography>
+                            <Typography variant="h6" className={classes.title}>
+                                <a href="/">
+                                    <img src={logo} alt="Alberto Belalcázar" />
+                                </a>
+                            </Typography>
                             <Hidden smDown>
                                 <Button style={{ display: 'flex', alignItems: 'center' }} href={menulinks.startsida.URL} className={classes.rightMenu}><HomeIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} /> Startsida</Button>
                                 <Button href={menulinks.aboutme.URL} className={classes.rightMenu}><FaceIcon style={{ fontSize: 18, margin: '0 5px 2px 5px' }} />Om mig</Button>
