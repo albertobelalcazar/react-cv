@@ -213,6 +213,29 @@ const ExperienceStudies = () => {
 
                 <Grid item xs={12} sm={6} md={6} style={{ padding: 10 }}>
                     <h1 className={classes.h1} id="experience">Erfarenhet</h1>
+                    <Accordion className={classes.expanded} expanded={expanded === 'panel13'} onChange={handleChange('panel13')}>
+                        <AccordionSummary
+                            className={classes.accordion}
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel13bh-content"
+                            id="panel13bh-header"
+                        >
+                            <Typography className={classes.heading}>Lexly</Typography>
+                            <Typography className={classes.secondaryHeading}>Webutvecklare / FrontEnd utvecklare</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                <span className="list_ExperienceStudies">
+                                    <span>
+                                        <span>Ledande roll som Front-End utvecklare for hela Lexly.se Lexly.com Lexly.fi Lexly.com.br</span>
+                                        <span>Jag har jobbat med react, umbraco, figma</span>
+                                        <a href="https://lexly.se/" target="_blank" rel="noopener noreferrer">https://lexly.se/</a>
+                                        <span>FrontEnd utvecklare</span>
+                                    </span>
+                                </span>
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
                     <Accordion className={classes.expanded} expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
                         <AccordionSummary
                             className={classes.accordion}
